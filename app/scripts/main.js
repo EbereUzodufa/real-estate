@@ -34,3 +34,13 @@ class Community{
         this.communityDesc = communityDesc;
     }
 }
+
+class Blog{
+    constructor({title, excerpt, image, date, content}){
+        this.title = title;
+        this.excerpt = excerpt;
+        this.image = image;
+        this.date = date;
+        this.content = content;
+    }
+}
