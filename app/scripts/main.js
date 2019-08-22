@@ -1,4 +1,4 @@
-import { type } from "os";
+// import { type } from "os";
 
 console.log('\'Allo \'Allo!');
 
@@ -61,3 +61,8 @@ class Office{
         this.workHours = workHours;
     }
 }
+
+(function(){
+    //Using this IIFE to tell site whether use stored JSON
+    localStorage.setItem('updated', 'false');
+})();
