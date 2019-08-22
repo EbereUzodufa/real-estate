@@ -26,3 +26,11 @@ class Property{
         this.isOnSlider = isOnSlider;
     }
 }
+
+class Community{
+    constructor({communityName, state, communityDesc}){
+        this.communityName = communityName;
+        this.state = state;
+        this.communityDesc = communityDesc;
+    }
+}
