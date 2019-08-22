@@ -76,6 +76,8 @@ class Testimony{
 //     localStorage.setItem('registeredLastUpdate', 'false');
 // })();
 
+const registeredLastUpdate = 1566487012044;
+
 const model = {
     properties: [],
     blogPosts: [],
@@ -91,14 +93,12 @@ const controller = {
     //I will like to do this Once!!!
     //Dear Angular, I love but this PC can run you. The Processor is weak and I have been on this project more than I should ):
     init: function(){
-        //Initial function
-        this.fetchData(model.properties, './data/properties.json');
-        this.fetchData(model.blogPosts, './data/blog-posts.json');
-        this.fetchData(model.socialMedia, './data/socialMediaLinks.json');
-        // this.fetchData(model.communities, './data/communities.json');
-        // this.fetchData(model.testimonies, './data/testimonies.json');
-        // this.fetchData(model.contacts, './data/contacts.json');
-        // this.fetchData(model.about, './data/about.json');
+        if (!localStorage.realEstate || localStorage.registeredLastUpdate !== registeredLastUpdate.toString()) {
+            //Initial function
+            controller.populateModel();
+        } else{
+            console.log('localStorage', localStorage);
+        }
     },
 
     fetchData: function(arrayEl, file){    
@@ -133,6 +133,16 @@ const controller = {
             
             return;
     },
+
+    populateModel: function(){
+        this.fetchData(model.properties, './data/properties.json');
+        this.fetchData(model.blogPosts, './data/blog-posts.json');
+        this.fetchData(model.socialMedia, './data/socialMediaLinks.json');
+        this.fetchData(model.communities, './data/communities.json');
+        this.fetchData(model.testimonies, './data/testimonies.json');
+        this.fetchData(model.contacts, './data/contacts.json');
+        // this.fetchData(model.about, './data/about.json');
+    },
 }
 
-// controller.init();
+controller.init();
