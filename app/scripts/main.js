@@ -66,3 +66,12 @@ class Office{
     //Using this IIFE to tell site whether use stored JSON
     localStorage.setItem('updated', 'false');
 })();
+
+const model = {
+    properties: [],
+    blogPosts: [],
+    contacts: [],
+    socialMedia: [],
+    communities: [],
+    offices: []
+}
