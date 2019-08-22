@@ -44,3 +44,10 @@ class Blog{
         this.content = content;
     }
 }
+
+class socialMedia{
+    constructor({name, value}){
+        this.name = name;
+        this.value = value;
+    }
+}
