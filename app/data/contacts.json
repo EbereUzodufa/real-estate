@@ -1,0 +1,74 @@
+﻿{
+  "offices": [
+    {
+      "mainOffice": {
+        "address": "No 16 Cresent Ave, rumuzo, Port Harcourt, Rivers State.",
+        "emails": [
+          "ebb@hu.bh"
+        ],
+        "phoneNumbers": [
+          "01-343-34432",
+          "090-9882-992-999"
+        ],
+        "workHours": [
+          {
+            "title": "Monday - Friday",
+            "time": "8am - 5pm"
+          },
+          {
+            "title": "Saturday",
+            "time": "9am - 4pm"
+          }
+        ]
+      },
+      "otherOffices": [
+        {
+          "officeTitle": "Ibadan Head Office",
+          "address": "No 2 wole str, Ibadan, Oyo State.",
+          "emails": [
+            "ebb@hu.bh"
+          ],
+          "phoneNumbers": [
+            "090-9877-0987",
+            "01-3547-0934"
+          ],
+          "workHours": [
+            {
+              "title": "Monday - Friday",
+              "time": "8am - 5pm"
+            },
+            {
+              "title": "Saturday",
+              "time": "9am - 4pm"
+            }
+          ]
+        },
+        {
+          "officeTitle": "Abuja Head Office",
+          "address": "x",
+          "emails": [
+            "ebb@hu.bh"
+          ],
+          "phoneNumbers": [
+            "090-9877-0987",
+            "01-3547-0934"
+          ],
+          "workHours": [
+            {
+              "title": "Monday",
+              "time": "Closed"
+            },
+            {
+              "title": "Tuesday - Friday",
+              "time": "8am - 5pm"
+            },
+            {
+              "title": "Saturday - Sunday",
+              "time": "11am - 6pm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

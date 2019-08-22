@@ -1,0 +1,34 @@
+﻿{
+  "communities": [
+    {
+      "cityName": "Ibeju-Lekki",
+      "cityDesc": "Ibeju-Lekki is a local government area of Lekki, Lagos State, Nigeria. The administrative centre was formerly at Akodo and was later moved to Igando Oloja due to the creation of Lekki Council Development Area. The name of the Local government was derived from two autonomous communities, Ibeju and Lekki.",
+      "state": "Lagos"
+    },
+    {
+      "cityName": "Epe",
+      "cityDesc": "Epe is a town and Local Government Area in Lagos State, Nigeria located on the north side of the Lekki Lagoon and about 90 km from Ibadan. At the 2006 Census the population of Epe was 181,409. The Paramount ruler of Epe Kingdom is the Oloja of Epeland, Oba Kamorudeen Animashaun.",
+      "state": "Lagos"
+    },
+    {
+      "cityName": "Agege",
+      "cityDesc": "Agege is a suburb and local government area in the Ikeja Division of Lagos State, Nigeria.",
+      "state": "Lagos"
+    },
+    {
+      "cityName": "Ibadan",
+      "cityDesc": "Ibadan is the capital and most populous city of Oyo State, Nigeria. With a population of over 3 million, it is the third most populous city in Nigeria after Lagos and Kano; it is the country's largest city by geographical area.",
+      "state": "Oyo"
+    },
+    {
+      "cityName": "Lugbe",
+      "cityDesc": "Lugbe is one of the popular suburban settlements in Abuja. It is in the Abuja Municipal Area Council (AMAC). It is largely residential and densely populated. Lugbe is about 17 minutes drive from the Central Business District of Abuja and 13 minutes drive to the Abuja Airport. It is along the airport road. Lugbe is divided into five districts namely Lugbe south, Lugbe north, Lugbe central, Lugbe west, Lugbe east.",
+      "state": "Abuja"
+    },
+    {
+      "cityName": "Port Harcourt",
+      "cityDesc": "Port Harcourt is the capital and largest city of Rivers State, Nigeria. It lies along the Bonny River and is located in the Niger Delta. As of 2016, the Port Harcourt urban area has an estimated population of 1,865,000 inhabitants, up from 1,382,592 as of 2006.",
+      "state": "Rivers"
+    }
+  ]
+}
