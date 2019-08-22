@@ -62,6 +62,15 @@ class Office{
     }
 }
 
+class Testimony{
+    constructor({personName, personTitle, personImg, personTestimony}){
+        this.personName = personName;
+        this.personTitle = personTitle;
+        this.personImg = personImg;
+        this.personTestimony = personTestimony;
+    }
+}
+
 // (function(){
 //     //Using this IIFE to tell site whether use stored JSON
 //     localStorage.setItem('registeredLastUpdate', 'false');
@@ -86,8 +95,10 @@ const controller = {
         this.fetchData(model.properties, './data/properties.json');
         this.fetchData(model.blogPosts, './data/blog-posts.json');
         this.fetchData(model.socialMedia, './data/socialMediaLinks.json');
-        // this.fetchData(model.contacts, './data/properties.json');
         // this.fetchData(model.communities, './data/communities.json');
+        // this.fetchData(model.testimonies, './data/testimonies.json');
+        // this.fetchData(model.contacts, './data/contacts.json');
+        // this.fetchData(model.about, './data/about.json');
     },
 
     fetchData: function(arrayEl, file){    
