@@ -75,3 +75,42 @@ const model = {
     communities: [],
     about: []
 }
+
+//I'm opting for *Controller* over Octopus
+const controller = {
+    //I will like to do this Once!!!
+    //Dear Angular, I love but this PC can run you. The Processor is weak and I have been on this project more than I should ):
+
+    fetchData: function(arrayEl, file){    
+        function status(response) {
+            //if Promise is Resolsved
+          if (response.status >= 200 && response.status < 300) {
+            return Promise.resolve(response)
+          } else {
+              // else - Promise fails/rejected
+            return Promise.reject(new Error(response.statusText))
+          }
+        }
+    
+        function json(response) {
+          return response.json()
+        }
+    
+        //Fetch to get file using chained Promise
+        fetch(file)
+          .then(status) 
+          .then(json)
+          .then(function(data) {
+              //add the values of the data from the JSON file
+              const [values] = Object.values(data);
+              values.map(value => {
+                  arrayEl.push(value);
+              })
+            console.log('Request succeeded with JSON response', data);
+          }).catch(function(error) {
+            console.log('Request failed', error);
+            });
+            
+            return;
+    },
+}
