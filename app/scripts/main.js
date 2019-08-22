@@ -80,6 +80,14 @@ const model = {
 const controller = {
     //I will like to do this Once!!!
     //Dear Angular, I love but this PC can run you. The Processor is weak and I have been on this project more than I should ):
+    init: function(){
+        //Initial function
+        this.fetchData(model.properties, './data/properties.json');
+        this.fetchData(model.blogPosts, './data/blog-posts.json');
+        this.fetchData(model.socialMedia, './data/socialMediaLinks.json');
+        // this.fetchData(model.contacts, './data/properties.json');
+        // this.fetchData(model.communities, './data/properties.json');
+    },
 
     fetchData: function(arrayEl, file){    
         function status(response) {
@@ -114,3 +122,5 @@ const controller = {
             return;
     },
 }
+
+// controller.init();
