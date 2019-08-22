@@ -73,7 +73,8 @@ const model = {
     contacts: [],
     socialMedia: [],
     communities: [],
-    about: []
+    about: [],
+    testimonies: []
 }
 
 //I'm opting for *Controller* over Octopus
@@ -86,7 +87,7 @@ const controller = {
         this.fetchData(model.blogPosts, './data/blog-posts.json');
         this.fetchData(model.socialMedia, './data/socialMediaLinks.json');
         // this.fetchData(model.contacts, './data/properties.json');
-        // this.fetchData(model.communities, './data/properties.json');
+        // this.fetchData(model.communities, './data/communities.json');
     },
 
     fetchData: function(arrayEl, file){    
