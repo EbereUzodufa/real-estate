@@ -62,10 +62,10 @@ class Office{
     }
 }
 
-(function(){
-    //Using this IIFE to tell site whether use stored JSON
-    localStorage.setItem('updated', 'false');
-})();
+// (function(){
+//     //Using this IIFE to tell site whether use stored JSON
+//     localStorage.setItem('registeredLastUpdate', 'false');
+// })();
 
 const model = {
     properties: [],
