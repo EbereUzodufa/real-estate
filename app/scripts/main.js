@@ -73,5 +73,5 @@ const model = {
     contacts: [],
     socialMedia: [],
     communities: [],
-    offices: []
+    about: []
 }
