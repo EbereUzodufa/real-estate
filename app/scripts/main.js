@@ -51,3 +51,13 @@ class socialMedia{
         this.value = value;
     }
 }
+
+class Office{
+    constructor({officeName, address, emails, phoneNumbers, workHours}){
+        this.officeName = officeName;
+        this.address = address;
+        this.emails = emails;
+        this.phoneNumbers = phoneNumbers;
+        this.workHours = workHours;
+    }
+}
