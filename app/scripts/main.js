@@ -185,6 +185,11 @@ const controller = {
     getThisProperty: function(propId){
         //Get us thsi exact property
         return model.properties.find(p=>p.id === propId);
+    },
+
+    getFeaturedProperties: function(){
+        //Return an arrray of all featured properties
+        return model.properties.filter(p=>p.isFeatured === true);
     }
 }
 
