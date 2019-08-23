@@ -233,6 +233,11 @@ const controller = {
         const noOfLatestBlog = 4;
         const blogPost = controller.getAllBlogPost();
         return blogPost.filter((elem, index)=> index < noOfLatestBlog);
+    },
+
+    getContacts: function(){
+        //Return all contacts
+        return model.contacts;
     }
 }
 
