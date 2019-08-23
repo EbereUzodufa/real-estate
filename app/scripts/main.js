@@ -213,6 +213,11 @@ const controller = {
     getAllSocialMedia: function(){
         //Return all social media accounts
         return model.socialMedia;
+    },
+
+    getWhatsApp: function(){
+        //Get us whatsApp account
+        return model.socialMedia.find(s=>s.name.toLowerCase() === "whatsapp");
     }
 }
 
