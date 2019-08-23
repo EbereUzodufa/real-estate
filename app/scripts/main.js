@@ -209,6 +209,11 @@ const controller = {
         //Get us this exact blog post
         return model.blogPosts.find(b=>b.id === blogPostId);
     },
+
+    getAllSocialMedia: function(){
+        //Return all social media accounts
+        return model.socialMedia;
+    }
 }
 
 controller.init();
