@@ -188,6 +188,11 @@ const controller = {
     getFeaturedProperties: function(){
         //Return an arrray of all featured properties
         return model.properties.filter(p=>p.isFeatured === true);
+    },
+    
+    getOnSliderProperties: function(){
+        //Return an arrray of all featured properties
+        return model.properties.filter(p=>p.isOnSlider === true);
     }
 }
 
