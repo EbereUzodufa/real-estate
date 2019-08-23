@@ -193,6 +193,11 @@ const controller = {
     getOnSliderProperties: function(){
         //Return an arrray of all featured properties
         return model.properties.filter(p=>p.isOnSlider === true);
+    },
+
+    getAllCommunities: function(){
+        //Return all communities
+        return model.communities;
     }
 }
 
