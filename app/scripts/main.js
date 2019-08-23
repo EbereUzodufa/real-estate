@@ -226,6 +226,13 @@ const controller = {
     getWhatsApp: function(){
         //Get us whatsApp account
         return model.socialMedia.find(s=>s.name.toLowerCase() === "whatsapp");
+    },
+
+    getFeaturedBlogPost: function(){
+        // Get latest 4 blogs
+        const noOfLatestBlog = 4;
+        const blogPost = controller.getAllBlogPost();
+        return blogPost.filter((elem, index)=> index < noOfLatestBlog);
     }
 }
 
