@@ -105,7 +105,8 @@ const controller = {
                 controller.addModelToLocal();
             }, 5000);
         } else{
-            console.log('localStorage', localStorage);
+            controller.convertLocalToModel();
+            // console.log('localStorage', localStorage);
         }
     },
 
@@ -208,7 +209,7 @@ const controller = {
     getAllBlogPost: function(){
         //Return all blog post in descending order
         return model.blogPosts.sort((a,b)=>
-            new Date(b.date) - new Date(a.date)
+            new Date(b.publishDate) - new Date(a.publishDate)
           );
     },
 
