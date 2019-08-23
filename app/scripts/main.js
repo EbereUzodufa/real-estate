@@ -198,7 +198,13 @@ const controller = {
     getAllCommunities: function(){
         //Return all communities
         return model.communities;
-    }
+    },
+
+    getThisCommunity: function(theCommunityName){
+        //Get us thsi exact property
+        return model.communities.find(c=>c.communityName === theCommunityName);
+    },
+
 }
 
 controller.init();
