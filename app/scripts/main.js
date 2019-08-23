@@ -180,6 +180,11 @@ const controller = {
     getAllProperties: function(){
         //Return all properties
         return model.properties;
+    },
+
+    getThisProperty: function(propId){
+        //Get us thsi exact property
+        return model.properties.find(p=>p.id === propId);
     }
 }
 
