@@ -11,7 +11,7 @@ console.log('\'Allo \'Allo!');
 // $(function () { $('[data-toggle="popover"]').popover(); });
 
 class Property{
-    constructor({name, images, desc, characterristics, community, price, neighborhood, mapLocation, features, isFeatured, offerType, isOnSlider}){
+    constructor(name, images, desc, characterristics, community, price, neighborhood, mapLocation, features, isFeatured, offerType, isOnSlider){
         this.name = name;
         this.images = images;
         this.desc = desc;
@@ -28,7 +28,7 @@ class Property{
 }
 
 class Community{
-    constructor({communityName, state, communityDesc}){
+    constructor(communityName, state, communityDesc){
         this.communityName = communityName;
         this.state = state;
         this.communityDesc = communityDesc;
@@ -36,7 +36,7 @@ class Community{
 }
 
 class Blog{
-    constructor({title, excerpt, image, date, content}){
+    constructor(title, excerpt, image, date, content){
         this.title = title;
         this.excerpt = excerpt;
         this.image = image;
@@ -46,14 +46,14 @@ class Blog{
 }
 
 class socialMedia{
-    constructor({name, link}){
+    constructor(name, link){
         this.name = name;
         this.link = link;
     }
 }
 
 class Office{
-    constructor({officeName, address, emails, phoneNumbers, workHours}){
+    constructor(officeName, address, emails, phoneNumbers, workHours){
         this.officeName = officeName;
         this.address = address;
         this.emails = emails;
@@ -63,7 +63,7 @@ class Office{
 }
 
 class Testimony{
-    constructor({personName, personTitle, personImg, personTestimony}){
+    constructor(personName, personTitle, personImg, personTestimony){
         this.personName = personName;
         this.personTitle = personTitle;
         this.personImg = personImg;
