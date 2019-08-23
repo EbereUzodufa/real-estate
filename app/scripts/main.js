@@ -175,6 +175,11 @@ const controller = {
             //Not in storage
             console.log('%cError' + '%c Not Found in Local Storage', "background-color: red; color: white", "color: red");
         }
+    },
+
+    getAllProperties: function(){
+        //Return all properties
+        return model.properties;
     }
 }
 
