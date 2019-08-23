@@ -46,9 +46,9 @@ class Blog{
 }
 
 class socialMedia{
-    constructor({name, value}){
+    constructor({name, link}){
         this.name = name;
-        this.value = value;
+        this.link = link;
     }
 }
 
@@ -95,7 +95,17 @@ const controller = {
     init: function(){
         if (!localStorage.realEstate || localStorage.registeredLastUpdate !== registeredLastUpdate.toString()) {
             //Initial function
-            controller.populateModel();
+            this.fetchData(model.properties, './data/properties.json');
+            this.fetchData(model.blogPosts, './data/blog-posts.json');
+            this.fetchData(model.socialMedia, './data/socialMediaLinks.json');
+            this.fetchData(model.communities, './data/communities.json');
+            this.fetchData(model.testimonies, './data/testimonies.json');
+            this.fetchData(model.contacts, './data/contacts.json');
+
+            // using setTimeout to ensure we store after fetch
+            setTimeout(() => {
+                controller.addModelToLocal();
+            }, 5000);
         } else{
             console.log('localStorage', localStorage);
         }
@@ -143,6 +153,13 @@ const controller = {
         this.fetchData(model.contacts, './data/contacts.json');
         // this.fetchData(model.about, './data/about.json');
     },
+
+    addModelToLocal: function(){
+        const obj = JSON.stringify(model);
+        localStorage.setItem('realEstate', obj);
+        localStorage.setItem('registeredLastUpdate', registeredLastUpdate.toString());
+        console.log('Moved in', localStorage);
+    }
 }
 
 controller.init();
