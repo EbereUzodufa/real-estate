@@ -205,6 +205,13 @@ const controller = {
         return model.communities.find(c=>c.communityName === theCommunityName);
     },
 
+    getAllBlogPost: function(){
+        //Return all blog post in descending order
+        return model.blogPosts.sort((a,b)=>
+            new Date(b.date) - new Date(a.date)
+          );
+    },
+
     getthisBlogPost: function(blogPostId){
         //Get us this exact blog post
         return model.blogPosts.find(b=>b.id === blogPostId);
