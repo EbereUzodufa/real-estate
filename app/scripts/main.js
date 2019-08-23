@@ -159,6 +159,22 @@ const controller = {
         localStorage.setItem('realEstate', obj);
         localStorage.setItem('registeredLastUpdate', registeredLastUpdate.toString());
         console.log('Moved in', localStorage);
+    },
+
+    convertLocalToModel: function(){
+        //This function is only called when we have the same data, so all we need to do is get the stored data and render.
+        if(localStorage.realEstate){
+            const modelObj = JSON.parse(localStorage.getItem('realEstate'));
+            // console.log('modelObj', modelObj);
+            for (const key in model) {
+                model[key] = modelObj[key];
+            }
+            // model = modelObj;
+            // console.log('Model', model);
+        } else{
+            //Not in storage
+            console.log('%cError' + '%c Not Found in Local Storage', "background-color: red; color: white", "color: red");
+        }
     }
 }
 
