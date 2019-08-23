@@ -11,7 +11,7 @@ console.log('\'Allo \'Allo!');
 // $(function () { $('[data-toggle="popover"]').popover(); });
 
 class Property{
-    constructor(name, images, desc, characterristics, community, price, neighborhood, mapLocation, features, isFeatured, offerType, isOnSlider){
+    constructor(name, images, desc, characterristics, community, price, neighborhood, mapLocation, features, offerType){
         this.name = name;
         this.images = images;
         this.desc = desc;
@@ -21,9 +21,7 @@ class Property{
         this.neighborhood = neighborhood;
         this.mapLocation = mapLocation;
         this.features = features;
-        this.isFeatured = isFeatured;
         this.offerType = offerType;
-        this.isOnSlider = isOnSlider;
     }
 }
 
