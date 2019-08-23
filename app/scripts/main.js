@@ -205,6 +205,10 @@ const controller = {
         return model.communities.find(c=>c.communityName === theCommunityName);
     },
 
+    getthisBlogPost: function(blogPostId){
+        //Get us this exact blog post
+        return model.blogPosts.find(b=>b.id === blogPostId);
+    },
 }
 
 controller.init();
