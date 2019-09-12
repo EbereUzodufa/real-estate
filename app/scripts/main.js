@@ -262,7 +262,17 @@ const view = {
         // const partnersObj = controller.getPartners();
     },
     // renderAbout
-    
+
+    renderContacts: function(){
+        //This renders the contact page;
+        const contactsObj = controller.getContacts();
+        //Main office
+        const mainOffice = contactsObj.mainOffice;
+        //An Array of other offices
+        const otherOffices = contactsObj.otherOffices;
+        //Address on Map
+        const mainOffice = contactsObj.mainOfficeonMap;
+    }
 }
 
 controller.init();
