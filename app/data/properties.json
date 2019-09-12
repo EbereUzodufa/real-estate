@@ -54,7 +54,8 @@
         "lat": 6.971633,
         "lng": 3.463354
       },
-      "videoLink": ""
+      "videoLink": "",
+      "isOnSlider": true
     },
     {
       "id": 2,
@@ -109,7 +110,8 @@
         "lat": 6.440216,
         "lng": 3.410115
       },
-      "videoLink": ""
+      "videoLink": "",
+      "isOnSlider": true
     },
     {
       "id": 3,
@@ -150,7 +152,8 @@
         "lat": 6.457424,
         "lng": 3.397308
       },
-      "videoLink": ""
+      "videoLink": "",
+      "isOnSlider": true
     },
     {
       "id": 4,
@@ -224,7 +227,8 @@
         "lat": 6.446663,
         "lng": 3.542883
       },
-      "videoLink": ""
+      "videoLink": "",
+      "isOnSlider": true
     },
     {
       "id": 5,
@@ -304,7 +308,8 @@
         "lat": 6.44141,
         "lng": 3.512594
       },
-      "videoLink": ""
+      "videoLink": "",
+      "isOnSlider": true
     },
     {
       "id": 6,
@@ -384,7 +389,8 @@
         "lat": 6.441966,
         "lng": 3.530564
       },
-      "videoLink": ""
+      "videoLink": "",
+      "isOnSlider": false
     },
     {
       "id": 7,
@@ -464,7 +470,8 @@
         "lat": 6.441966,
         "lng": 3.530564
       },
-      "videoLink": ""
+      "videoLink": "",
+      "isOnSlider": false
     },
     {
       "id": 8,
@@ -525,7 +532,8 @@
         "lat": 6.502798,
         "lng": 3.813797
       },
-      "videoLink": ""
+      "videoLink": "",
+      "isOnSlider": false
     },
     {
       "id": 9,
@@ -586,7 +594,8 @@
         "lat": 6.502798,
         "lng": 3.813797
       },
-      "videoLink": ""
+      "videoLink": "",
+      "isOnSlider": false
     }
   ]
 }
