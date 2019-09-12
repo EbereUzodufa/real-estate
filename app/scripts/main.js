@@ -277,6 +277,11 @@ const view = {
     renderBlog: function(){
         //This renders the Blog page
         const blogPostsObj = controller.getAllBlogPost();
+    },
+
+    renderProperties: function(){
+        //This renders all properties on properties page
+        const propertiesObj = controller.getAllProperties();
     }
 }
 
