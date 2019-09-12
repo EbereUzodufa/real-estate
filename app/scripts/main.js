@@ -196,6 +196,10 @@ const controller = {
         return model.properties.filter(p=>p.isOnSlider === true);
     },
 
+    getTestimonials: function(){
+        return model.testimonies;
+    },
+
     getAllCommunities: function(){
         //Return all communities
         return model.communities;
