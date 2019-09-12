@@ -241,4 +241,8 @@ const controller = {
     }
 }
 
+const view = {
+    
+}
+
 controller.init();
