@@ -246,7 +246,20 @@ const controller = {
 }
 
 const view = {
-    
+    renderHome: function(){
+        //Get Slider properties
+        const sliderObj = controller.getOnSliderProperties();
+        //Get featured properties
+        const featuredProperties = controller.getFeaturedProperties();
+        //Get Testimonials
+        const testimonialsObj = controller.getTestimonials();
+        //Get Commnunites
+        const communitiesObj = controller.getAllCommunities();
+        //Get featured Blog
+        const featuredBlogPosts = controller.getFeaturedBlogPost();
+        //Get Partners
+        // const partnersObj = controller.getPartners();
+    }
 }
 
 controller.init();
