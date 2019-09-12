@@ -272,6 +272,11 @@ const view = {
         const otherOffices = contactsObj.otherOffices;
         //Address on Map
         const mainOfficeonMap = contactsObj.mainOfficeonMap;
+    },
+
+    renderBlog: function(){
+        //This renders the Blog page
+        const blogPostsObj = controller.getAllBlogPost();
     }
 }
 
