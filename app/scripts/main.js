@@ -246,6 +246,7 @@ const controller = {
 }
 
 const view = {
+    //For things on the home page
     renderHome: function(){
         //Get Slider properties
         const sliderObj = controller.getOnSliderProperties();
@@ -259,7 +260,9 @@ const view = {
         const featuredBlogPosts = controller.getFeaturedBlogPost();
         //Get Partners
         // const partnersObj = controller.getPartners();
-    }
+    },
+    // renderAbout
+    
 }
 
 controller.init();
