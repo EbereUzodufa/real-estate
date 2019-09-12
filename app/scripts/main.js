@@ -271,7 +271,7 @@ const view = {
         //An Array of other offices
         const otherOffices = contactsObj.otherOffices;
         //Address on Map
-        const mainOffice = contactsObj.mainOfficeonMap;
+        const mainOfficeonMap = contactsObj.mainOfficeonMap;
     }
 }
 
